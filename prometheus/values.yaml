@@ -1,0 +1,15 @@
+prometheus:
+  ingress:
+    enabled: true
+    hosts: [prometheus.tietoevry.site]
+    paths: [/*]
+  service:
+    type: NodePort
+
+grafana:
+  ingress:
+    enabled: true
+    hosts: [grafana.tietoevry.site]
+    path: /*
+  service:
+    type: NodePort
